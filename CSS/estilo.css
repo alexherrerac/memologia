@@ -1,0 +1,244 @@
+@font-face{
+    font-family:"Acme";
+    src: url(../Fonts/Acme-Regular.ttf);
+}
+@font-face{
+    font-family:"Spicy";
+    src: url(../Fonts/SpicyRice-Regular.ttf);
+}
+@font-face{
+    font-family:"Righteous";
+    src: url(../Fonts/Righteous-Regular.ttf);
+}
+@font-face{
+    font-family:"OpenSans";
+    src: url(../Fonts/OpenSans-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+    padding: 10;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    background: linear-gradient(90deg, blue, purple);
+    background-size: 800% 600%;
+    animation: BgGradient 10s ease infinite;
+}
+@keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+/*---------------------------------------------------------------*/
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.conteiner--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between 5px;
+    align-items: center;
+}
+.containera {
+    border-image-source: url("img/borde.png");
+    border-image-slice: initial;
+    border-image-repeat: stretch;
+    border-radius: 30px 30px 30px 30px;
+    border: 10px inset #ada1ad;
+    padding: 1px;
+    text-align: justify;
+}
+.column {
+    width: 100%;
+}
+/*-------------------------------------------------------------------*/
+.main-header {
+    width: 100%;
+}
+.logo {
+    font-size: 4cm;
+    font-size: 13vw;
+    color: goldenrod;
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    margin-top: 0cm;
+    flex-wrap: wrap;
+    margin: auto;
+    min-width: 300px;
+    position: relative;
+}
+.logop {
+    font-size: 1.2cm;
+    color: goldenrod;
+    padding: 10px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: -0.3cm;
+    min-width: 300px;
+    position: relative;
+}
+.logo-container{
+    display: flex;
+}
+.main-header {
+    position: relative;
+    top: 2px;
+}
+/*---------------------------------------------------------------------*/
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+    margin-top: -1cm;
+    text-decoration: none;
+    list-style: none;
+}
+.main {
+    position: relative;
+    width: 98%;
+    padding: 0;
+    margin-top: 0cm;
+    margin: 5px;
+    list-style: none;
+    text-align: center;
+    columns: 3;
+    align-content: center;
+    text-decoration: none;
+    z-index: 1000;
+}
+.banner {
+    margin-top: 0cm;
+    text-align: center;
+    position: relative;
+    transform: translateX(-50) translateY(-50);
+    flex-wrap: wrap;
+}
+.banner__content {
+    position: relative;
+    font-family: 'Spicy Rice', cursive;
+    text-align: center;
+    width: 82%;
+    transform: translateX(-50) translateY(-50);
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+    border: 8px inset green;
+    margin: auto;
+    font-size: 3vw;
+}
+.banner__img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+}
+.nombre {
+    margin: center;
+    color: goldenrod;
+    font-size: 1.2cm;
+    font-size: 6vw;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.x {
+    columns: 2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.fb-root {
+    font-size: 5cm;
+    text-align: center;
+    position: relative right;
+}
+.canvas {
+    position: relative left;
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: .4cm;
+}
+.titulo {
+    font-family: 'Spicy Rice', cursive;
+    color: white;
+    font-size: .7cm;
+    text-align: center;
+}
+.main__title {
+    text-align: center;
+    text-size-adjust: initial;
+}
+.main-footer {
+    columns: 2;
+    margin-top: 1.5cm;
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+.column--50 {
+    width: 100%;
+    margin-left: 0.8cm;
+    padding: 10px;
+    line-height: 30px;
+}
+.main__title {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    list-style: none;
+}
+.copy {
+    text-align: left;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 0.8cm;
+}
+/*------------------------------------------------------*/
+.redes {
+    text-decoration: none;
+    color: white;
+}
+.cronometro{
+    height:100px;;
+    position: relative top;
+    text-align:center;
+} 
+.cuadro {
+    font-family: 'Spicy Rice', cursive;
+    font-size:30px;
+    color: goldenrod;
+    border: 0px;
+}
+.btnprobar {
+    font-family: 'Spicy Rice', cursive;
+    font-size:20px;
+    color: goldenrod;
+    border-radius: 10px 10px 10px 10px;
+    width: 100px;
+}
+.cajaTexto {
+    font-family: 'Spicy Rice', cursive;
+    font-size:18px;
+    color: black;
+}
+

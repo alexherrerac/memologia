@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el personaje</title>
+    <meta name="viewport" content="width=device-width,user scalable-yes,
+    initial-scale=1.0 maximum-scale=3.0 minimum-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">  
+    <link rel="stylesheet" href="CSS/font.css">
+</head>
+
+<body onload="cronometrar()">
+    
+    <h1 class="logop">Adivina el Personaje</h1>
+
+    <canvas width="500px" height="400px" id="miCanvas" class="canvas"></canvas>
+    
+    <div class= respuesta>
+        <p class="titulo">¿Quien es el personaje oculto?:<br>
+            <input type="text" name="prueba" class=cajaTexto id="txtcaja" onkeypress="validar(event)" />
+            <input type="button" name="pruebo" class="btnprobar" value="Probar" id="botonsito" />
+        </p>
+    </div>
+
+    <div class="cronometro">
+        <div id="hms" class="cuadro"></div>
+        <div id="nivel" class="cuadro"></div>
+        <div id="puntos" class="cuadro"></div>
+    </div>
+
+    <script src="JS/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+</body>
+</html>
