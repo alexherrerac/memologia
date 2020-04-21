@@ -46,7 +46,9 @@ function finJuego() {
             icon: "success",
             backdrop: true,
             timer: 10000,
+            
         });
+        
         document.all("prueba").disabled='true';
         document.all("pruebo").disabled='true';
         document.getElementById("nivel").innerHTML="Nivel: " + 10;
@@ -54,9 +56,22 @@ function finJuego() {
         parar();
     }
 }
-function jugarDenuevo() {
-    
+
+function nombre() {
+    ( async () => {
+    const {value: nombre } =  await Swal.fire({
+    title: "Bienvenido!",
+    text: "¿Cual es tu Nombre?",
+    icon: "question",
+    backdrop: true,
+    input: "text",
+    inputPlaceholder: "Nombre",
+    allowOutsideClick: false
+    });
+    document.getElementById("nombre").innerHTML= nombre + "<br>" + "Puntaje: 0";
+})();
 }
+
 function mensajebien () {
     parar();
     var puntaje = parseInt(10000-100*s);
