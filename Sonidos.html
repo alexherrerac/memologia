@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adivina el personaje</title>
+    <title>Sonidos de Animales</title>
     <meta name="viewport" content="width=device-width,user scalable-yes,
     initial-scale=1.0 maximum-scale=3.0 minimum-scale=1.0">
     <link rel="stylesheet" href="CSS/estilo.css">  
     <link rel="stylesheet" href="CSS/font.css">
 </head>
 
-<body onload="cronometrar()">
-    
-    <h1 class="logop">Adivina el Personaje</h1>
+<body onload="cronometrar()">   
+	
+     <h1 class="logop">Sonidos de Animales</h1>
 
-    <div id="fb-root">
+     <div id="fb-root">
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"></a>
         <div class="fb-share-button" data-href="https://memologica.000webhostapp.com" data-layout="button"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmemologica.000webhostapp.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
     </div>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0"></script>
-
-    <canvas width="500px" height="400px" id="miCanvas" class="canvas"></canvas>
+	 
+     <canvas width="600px" height="400px" id="miCanvas" class="canvas"></canvas>
     
+    <div id="player">
+    <img src="" class="cover" id="art" />
+    <div class="trackinfo">
+        <p id="title"></p>
+        <p id="artist"></p>
+    </div>
+    <div id="track">
+        <div id="progress"></div>
+        <div id="handler"></div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <div class="cont">
+                <button id="play" class="nav">
+                    <img class="pad" src="http://abarcarodriguez.com/lab/play.png" />
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
     <div class= respuesta>
-        <p class="titulo">¿Quien es el personaje oculto?:<br>
+        <p class="titulo">¿Que animal hace el sonido?:<br>
             <input type="text" name="prueba" class=cajaTexto id="txtcaja" onkeypress="validar(event)" />
             <input type="button" name="pruebo" class="btnprobar" value="Probar" id="botonsito" />
         </p>
@@ -37,8 +57,10 @@
         <div id="puntos" class="cuadro"></div>
     </div>
 
-    <script src="JS/funciones.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JS/funcionAudio.js"></script>
+	<script src="JS/pruebaSong.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		
     
 </body>
 </html>
