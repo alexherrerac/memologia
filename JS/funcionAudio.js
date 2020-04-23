@@ -76,58 +76,58 @@ boton.addEventListener("click", prueba);
 
 function prueba() {
     if (num==1) {
-        if (cajatxt.value == "buho" || cajatxt.value == "Buho" || cajatxt.value == "BUHO") {
+        var respuesta = cajatxt.value.toLowerCase();
+        if ( respuesta == "buho") {
         mensajebien();
         adelante();
         nextTrack();
-    } else mensajemal();} else if (num==2) {
-        if (cajatxt.value == "caballo" || cajatxt.value == "Caballo" || cajatxt.value == "CABALLO") {
+    } else mensajemal(); } else if (num==2) {
+        if (respuesta == "caballo") {
         mensajebien();
         adelante();
         nextTrack();
     } else mensajemal(); } else if (num==3) {
-        if (cajatxt.value == "cerdo" || cajatxt.value == "Cerdo" || cajatxt.value == "CERDO") {
+        if (respuesta == "cerdo") {
         mensajebien();
         adelante();
         nextTrack();
     } else mensajemal(); } else if (num==4) {
-        if (cajatxt.value == "cuervo" || cajatxt.value == "Cuervo" || cajatxt.value == "CUERVO") {
+        if (respuesta == "cuervo") {
         mensajebien();
         adelante();
         nextTrack();
     } else mensajemal(); } else if (num==5) {
-        if (cajatxt.value == "elefante" || cajatxt.value == "Elefante" || cajatxt.value == "ELEFANTE") {
+        if (respuesta == "elefante") {
         mensajebien();
         adelante();
         nextTrack();
     } else mensajemal(); } else if (num==6) {
-        if (cajatxt.value == "grillo" || cajatxt.value == "Grillo" || cajatxt.value == "GRILLO") {
+        if (respuesta == "grillo") {
         mensajebien();
         adelante();
         nextTrack();
     } else mensajemal(); } else if (num==7) {
-        if (cajatxt.value == "leon" || cajatxt.value == "Leon" || cajatxt.value == "LEON") {
+        if (respuesta == "leon") {
         mensajebien();
         adelante();
         nextTrack();
     }else mensajemal(); } else if (num==8) {
-        if (cajatxt.value == "lobo" || cajatxt.value == "Lobo" || cajatxt.value == "LOBO") {
+        if (respuesta == "lobo") {
         mensajebien();
         adelante();
         nextTrack();
     }  else mensajemal(); } else if (num==9) {
-        if (cajatxt.value == "mono" || cajatxt.value == "Mono" || cajatxt.value == "MONO") {
+        if (respuesta == "mono") {
         mensajebien();
         adelante();
         nextTrack();
     } else mensajemal(); } else if (num==10) {
-        if (cajatxt.value == "oso" || cajatxt.value == "Oso" || cajatxt.value == "OSO") {
+        if (respuesta == "oso") {
         mensajebien();
         adelante();
         parar();
         nextTrack();
     }  
-
         else {
         mensajemal(); }
     }

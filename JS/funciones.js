@@ -98,44 +98,45 @@ function mensajemal () {
 boton.addEventListener("click", prueba);
 
 function prueba() {
+    var respuesta = cajatxt.value.toLowerCase();
     if (num==1) {
-        if (cajatxt.value == "mickey mouse" || cajatxt.value == "Mickey Mouse" || cajatxt.value == "MICKEY MOUSE") {
+        if (respuesta == "mickey mouse") {
         mensajebien();
         adelante();
-    } else mensajemal();} else if (num==2) {
-        if (cajatxt.value == "shrek" || cajatxt.value == "Shrek" || cajatxt.value == "SHREK") {
+    } else mensajemal(); } else if (num==2) {
+        if (respuesta == "shrek") {
         mensajebien();
         adelante();
     } else mensajemal(); } else if (num==3) {
-        if (cajatxt.value == "poppy" || cajatxt.value == "Poppy" || cajatxt.value == "POPPY") {
+        if (respuesta == "poppy") {
         mensajebien();
         adelante();
     } else mensajemal(); } else if (num==4) {
-        if (cajatxt.value == "remy" || cajatxt.value == "Remy" || cajatxt.value == "REMY") {
+        if (respuesta == "remy") {
         mensajebien();
         adelante();
     } else mensajemal(); } else if (num==5) {
-        if (cajatxt.value == "peter pan" || cajatxt.value == "Peter Pan" || cajatxt.value == "PETER PAN") {
+        if (respuesta == "peter pan") {
         mensajebien();
         adelante();
     } else mensajemal(); } else if (num==6) {
-        if (cajatxt.value == "desagrado" || cajatxt.value == "Desagrado" || cajatxt.value == "DESAGRADO") {
+        if (respuesta == "desagrado") {
         mensajebien();
         adelante();
     } else mensajemal(); } else if (num==7) {
-        if (cajatxt.value == "oh" || cajatxt.value == "Oh" || cajatxt.value == "OH") {
+        if (respuesta == "oh") {
         mensajebien();
         adelante();
     }else mensajemal(); } else if (num==8) {
-        if (cajatxt.value == "mike wazowski" || cajatxt.value == "Mike Wazowski" || cajatxt.value == "MIKE WAZOWSKI") {
+        if (respuesta == "mike wazowski") {
         mensajebien();
         adelante();
     }  else mensajemal(); } else if (num==9) {
-        if (cajatxt.value == "tigresa" || cajatxt.value == "Tigresa" || cajatxt.value == "TIGRESA") {
+        if (respuesta == "tigresa") {
         mensajebien();
         adelante();
     } else mensajemal(); } else if (num==10) {
-        if (cajatxt.value == "snowball" || cajatxt.value == "Snowball" || cajatxt.value == "SNOWBALL") {
+        if (respuesta == "snowball") {
         mensajebien();
         adelante();
         parar();
