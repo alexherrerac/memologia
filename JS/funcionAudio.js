@@ -11,7 +11,7 @@ document.getElementById("nivel").innerHTML="Nivel: " + nivel;
 
 var reproducir = new Audio();
 var num = 1;
-reproducir.src = "Song/" + num + ".mp3";
+
 
 reproducir.onload = function () {
     scaleToFit(this);
@@ -77,7 +77,7 @@ boton.addEventListener("click", prueba);
 function prueba() {
     var respuesta = cajatxt.value.toLowerCase();
     if (num==1) {
-        if ( respuesta == "buho") {
+        if (respuesta == "buho") {
         mensajebien();
         adelante();
         nextTrack();
@@ -126,7 +126,6 @@ function prueba() {
         mensajebien();
         adelante();
         parar();
-        nextTrack();
     }  
         else {
         mensajemal(); }
