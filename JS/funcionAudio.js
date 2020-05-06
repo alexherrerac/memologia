@@ -75,8 +75,8 @@ function mensajemal () {
 boton.addEventListener("click", prueba);
 
 function prueba() {
+    var respuesta = cajatxt.value.toLowerCase();
     if (num==1) {
-        var respuesta = cajatxt.value.toLowerCase();
         if ( respuesta == "buho") {
         mensajebien();
         adelante();
